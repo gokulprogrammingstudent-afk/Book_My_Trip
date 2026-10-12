@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Header */
+
+header {
+    background-color: white;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo span {
+    background-color: #28669c;
+    color: white;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.support {
+    font-size: 12px;
+    color: #555;
+}
+
+.account {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+/* Navigation */
+
+nav {
+    background-color: #28669c;
+    padding: 15px 5%;
+}
+
+nav select {
+    color: white;
+    width: 70px;
+    border: none;
+    margin-right: 20px;
+    font-size: 14px;
+    background-color: #28669c;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 25px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Hero Section */
+
+.hero {
+    min-height: 450px;
+    background-image: url(https://imgs.search.brave.com/3WYPsYdELsJIBho05ECnZk8yJXEcEbRrgCz9B5TPyJQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aGVy/ZXNvcnRzY29sbGVj/dGlvbi5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjUvMTEv/YmVzdC1yZXNvcnRz/LWluLWR1YmFpLmF2/aWY);
+    background-size: cover;
+    background-position: center;
+    background-color: #b9c6cc;
+    padding: 30px 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-text {
+    background-color: #28669c;
+    color: white;
+    padding: 20px;
+    width: 300px;
+    margin-left: auto;
+}
+
+.hero-text h2 {
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    margin-bottom: 15px;
+}
+
+/* Booking Form */
+
+.booking {
+    background-color: white;
+    border: 3px solid #333;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.booking h3 {
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    margin: -20px -20px 20px;
+}
+
+.booking form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.booking label {
+    font-weight: bold;
+}
+
+.booking input,
+.booking select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    min-width: 100px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.booking button {
+    background-color: #ef4549;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+}
+
+/* Popular Hotels */
+
+.hotels {
+    padding: 30px 5%;
+}
+
+.hotels h2,
+.deals h2 {
+    margin-bottom: 20px;
+}
+
+.hotel-container {
+    display: flex;
+    gap: 20px;
+}
+
+.hotel-card {
+    background-color: white;
+    width: 33.33%;
+    padding-bottom: 15px;
+    border: 1px solid #ddd;
+}
+
+.hotel-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    background-color: #ddd;
+}
+
+.hotel-card h3,
+.hotel-card p,
+.hotel-card h4 {
+    margin: 10px;
+}
+
+.hotel-card h3 {
+    color: #28669c;
+}
+
+.hotel-card h4 {
+    color: #28669c;
+}
+
+.hotel-card button {
+    margin: 0 10px;
+    padding: 10px 15px;
+    background-color: #28669c;
+    color: white;
+    border: none;
+}
+
+/* Hot Deals */
+
+.deals {
+    padding: 30px 5%;
+    background-color: #e9e9e9;
+}
+
+.deal-container {
+    display: flex;
+    gap: 20px;
+}
+
+.deal-card {
+    background-color: white;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.deal-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    background-color: #ccc;
+}
+
+.deal-card h3,
+.deal-card p {
+    margin: 10px;
+}
+
+/* Blogs */
+
+.blogs {
+    background-color: white;
+    margin: 25px 5%;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.blogs h2 {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+
+footer {
+    background-color: white;
+    padding: 30px 5%;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+footer div {
+    min-width: 150px;
+}
+
+footer h3 {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+footer p {
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: #777;
+}
+
+footer input {
+    padding: 10px;
+    width: 180px;
+    border: 1px solid #ccc;
+}
+
+footer button {
+    padding: 10px;
+    background-color: #28669c;
+    color: white;
+    border: none;
+}
+
+/* Mobile Responsive Design */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    nav a {
+        margin-right: 5px;
+    }
+
+    .hero {
+        padding: 20px 4%;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .booking form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .booking input,
+    .booking select {
+        width: 100%;
+    }
+
+    .hotel-container,
+    .deal-container {
+        flex-direction: column;
+    }
+
+    .hotel-card,
+    .deal-card {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}

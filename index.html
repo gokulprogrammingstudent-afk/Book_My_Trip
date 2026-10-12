@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMyTrip</title>
+    <link rel="stylesheet" href="task.css">
+    <link rel="icon" type="image" href="https://template.canva.com/EAGIe7Bjkko/1/0/400w-4fe0AZJUtWg.jpg">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">bookmy<span>trip.</span></div>
+
+        <div class="support">
+            Call 24/7 Support<br>
+            +91 9876543210
+        </div>
+
+        <button class="account">MY ACCOUNT</button>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <select name="hotels" id="hotel">
+            <option value="">Hotels</option>
+            <option value="hotels in india">Hotels in India</option>
+            <option value="international hotels">International Hotels</option>
+            <option value="international hostels">International Hostels</option>
+            <option value="popular hotels in asia">Popular Hotels in Asia</option>
+            <option value="popular hotels in europe">Popular Hotels in Europe</option>
+            <option value="activities">Activities</option>
+            <option value="hotel deals of the week">Hotel Deals of the Week</option>
+        </select>
+
+        <a href="#">Flights</a>
+        <a href="#">Vacations</a>
+        <a href="#">Hot Deals</a>
+        <a href="#">Travel Guides</a>
+    </nav>
+     
+
+    <!-- Hero Section -->
+    <section class="hero">
+        
+        <div class="hero-text">
+            <h2>Hotel Marriott</h2>
+            <p>Enjoy your holidays with beautiful views.</p>
+            <h3>₹1200 Inclusive of food and dinner</h3>
+        </div>
+
+        <!-- Booking Form -->
+        <div class="booking">
+            <h3>Book Your Trip</h3>
+
+            <form id="bookingForm">
+
+                <label>Where?</label>
+                <select id="location">
+                    <option value="">Select Location</option>
+                    <option>India</option>
+                    <option>Switzerland</option>
+                    <option>Australia</option>
+                    <option>Maldives</option>
+                </select>
+
+                <label>When?</label>
+                <input type="date" id="date" required>
+
+                <label>Rooms</label>
+                <select id="rooms">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+
+                <label>Adults</label>
+                <select id="adults">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+
+                <label>Children</label>
+                <select id="children">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                </select>
+
+                <button type="submit">SEARCH</button>
+
+            </form>
+        </div>
+
+    </section>
+
+    <!-- Popular Hotels -->
+    <section class="hotels" id="hotels">
+
+        <h2>Popular Hotels</h2>
+
+        <div class="hotel-container">
+
+            <div class="hotel-card">
+                <img src="https://imgs.search.brave.com/-45rcG6CVCfOfLkgwLhTB3XeZlIMMPdynlssBIbYR7U/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNTU1/ODc3OTU1L3Bob3Rv/L3Rhai1tYWhhbC1w/YWxhY2UtdG93ZXIt/aG90ZWwtbXVtYmFp/LWluZGlhLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz1idlpU/bUFyTGtfZmcxbF91/eGxIamcyZFFrQzBj/Mld6Sk5OS2ZldGdB/MmJFPQ" alt="Hotel Taj Palace">
+                <h3>Hotel Taj Palace</h3>
+                <p>Mumbai, India</p>
+                <h4>₹2000</h4>
+                <button onclick="bookHotel('Hotel Taj Palace')">
+                    Book Now
+                </button>
+            </div>
+
+            <div class="hotel-card">
+                <img src="https://imgs.search.brave.com/L93NUGJNZmuU4qOaGWIZaWDxOE2dab0lw1Oe0S7jZIE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMudHJhdmVsdHJp/YW5nbGUuY29tL2Js/b2cvd3AtY29udGVu/dC91cGxvYWRzLzIw/MTcvMTAvNDguanBn" alt="Mont Blanc">
+                <h3>Mont Blanc</h3>
+                <p>Zurich, Switzerland</p>
+                <h4>₹3200</h4>
+                <button onclick="bookHotel('Mont Blanc')">
+                    Book Now
+                </button>
+            </div>
+
+            <div class="hotel-card">
+                <img src="https://imgs.search.brave.com/njXqtr2bpBkWbNLF4tvrp6HoMpP92X1kfH7NEXShFQQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tYXJy/aW90dHNiYWxpZ2Fy/ZGVucy5ob3RlbG51/c2FkdWEubmV0L2Rh/dGEvUGljcy80NTB4/NDUwdy8xMzcxMy8x/MzcxMzYwLzEzNzEz/NjA3NjQvbWFycmlv/dHQtcy1iYWxpLW51/c2EtZHVhLWdhcmRl/bnMtbnVzYS1kdWEt/YmFsaS1waWMtNDku/SlBFRw" alt="Hotel Marriott">
+                <h3>Hotel Marriott</h3>
+                <p>Melbourne, Australia</p>
+                <h4>₹1200</h4>
+                <button onclick="bookHotel('Hotel Marriott')">
+                    Book Now
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Hot Deals -->
+    <section class="deals" id="deals">
+
+        <h2>Hot Deals</h2>
+
+        <div class="deal-container">
+
+            <div class="deal-card">
+                <img src="https://imgs.search.brave.com/ft_xP8qSY85qUZKy7CFGPcuOenHkW_OD-yaRV7zPP6Q/rs:fit:0:180:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvODAx/NzA5Njc4L3Bob3Rv/L3Bhbm9yYW1hLWF0/LXN1bnJpc2Utb2Yt/dGhlLWVpZmZlbC10/b3dlci1pbi1wYXJp/cy1mcmFuY2UuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPUFz/dWlMYzA4S01OTkVY/SVR3M1hocVhaY0NT/OTNEODhFc2gwdTFF/ZkJmVWM9" alt="Paris Holiday">
+                <h3>Paris Eurostar Breaks</h3>
+                <p>Explore beautiful Paris.</p>
+            </div>
+
+            <div class="deal-card">
+                <img src="https://imgs.search.brave.com/N5A0XSTiUEgg50b2XBBhTeghrS_ORp02gehuXyn3cJw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzIwLzYyLzM3Lzcy/LzM2MF9GXzIwNjIz/NzcyNjZfdW1PRUhM/U0UzTEozNmVSdEdG/UkNjR2daQ2o3ZDFP/cWYuanBn" alt="Beach Holiday">
+                <h3>Beautiful Beach Holidays</h3>
+                <p>Enjoy your vacation by the sea.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Latest Blogs -->
+    <section class="blogs" id="blogs">
+        <h2>Latest Blogs</h2>
+        <p>Best places to visit in India</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <div>
+            <h3>Company</h3>
+            <p>About the Company</p>
+            <p>Terms and Conditions</p>
+            <p>Privacy Policy</p>
+            <p>Career</p>
+        </div>
+
+        <div>
+            <h3>Customer Support</h3>
+            <p>Contact</p>
+            <p>FAQ</p>
+        </div>
+
+        <div>
+            <h3>Follow Us</h3>
+            <p>Facebook | Instagram | LinkedIn</p>
+        </div>
+
+        <div>
+            <h3>Deals and Offers</h3>
+            <input type="email" id="email"
+                   placeholder="Enter your email">
+            <button onclick="subscribe()">SUBSCRIBE</button>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
